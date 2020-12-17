@@ -15,27 +15,32 @@
             <div class="logo">
                 <img src="images/logo.png" alt="">
             </div>
-            <div class="header__menu">
-                <ul>
-                    <li>home</li>
-                    <li>about us</li>
-                    <li>portfolio</li>
-                    <li>clients</li>
-                    <li>team</li>
-                    <li>services</li>
-                    <li>blog</li>
-                    <li>contact</li>
-                </ul>
+            <ul class="header__menu">
+                <li>home</li>
+                <li>about us</li>
+                <li>portfolio</li>
+                <li>clients</li>
+                <li>team</li>
+                <li>services</li>
+                <li>blog</li>
+                <li>contact</li>
+            </ul>
+            <div class="burger">
+                <span></span>
             </div>
         </div>
     </header>
     <section class="intro">
-        <div class="slider">
-            <div class="slide slide-1" style="background-image: url(images/intro-slide1.jpg)">
+        <div class="intro__wrapper">
+            <div class="intro__slider">
+                <div class="intro__slide slide active" style="background-image: url(images/intro-slide1.jpg)">
+                </div>
+                <div class="intro__slide slide" style="background-image: url(images/intro-slide2.jpg)">
+                </div>
             </div>
         </div>
         <div class="intro__content">
-            <span class="icon-chevron-left-solid intro__arrow"></span>
+            <span class="icon-chevron-left-solid intro__arrow intro__arrow_left arrow-left"></span>
             <div class="intro__main-content">
                 <h1>why <span>creativia ?</span></h1>
                 <div class="intro__desc">
@@ -47,10 +52,773 @@
                     <button>free psd</button>
                 </div>
             </div>
-            <span class="icon-chevron-right-solid intro__arrow"></span>
+            <span class="icon-chevron-right-solid intro__arrow intro__arrow_right arrow-right"></span>
         </div>
     </section>
-    <script src="js/script.js"></script>
+    <section class="about offset">
+        <div class="container">
+            <div class="about__title-wrapper">
+                <h2 class="title about__title">
+                    about <span>creativia</span>
+                </h2>
+                <p class="title-desc about__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="about__info">
+                <div class="about__content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
+                        Nulla mi ipsum, consequat commodo condimentum vitae
+                    </p>
+                    <div class="about__accordion">
+                        <div class="about__accordion-item">
+                            <div class="about__accordion-title">
+                                <span>
+                                </span>
+                                <h3>Who is creativia?</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
+                            </p>
+                        </div>
+                        <div class="about__accordion-item">
+                            <div class="about__accordion-title">
+                                <span>
+                                    </span>
+                                <h3>Experiences</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
+                            </p>
+                        </div>
+                        <div class="about__accordion-item">
+                            <div class="about__accordion-title">
+                                <span>
+                                        </span>
+                                <h3>Learn more</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__picture">
+                    <img src="images/about-picture.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="line offset">
+        <img src="images/line.jpg" alt="">
+    </div>
+    <section class="pluses">
+        <div class="container">
+            <div class="pluses__wrapper">
+                <div class="pluses__item">
+                    <div class="pluses__item-picture">
+                        <span class="icon-hexagon">
+                                </span>
+                        <span class="icon-heart-solid">
+                                    </span>
+                    </div>
+                    <h2 class="pluses__title">flat design</h2>
+                    <p class="pluses__desc">
+                        Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+                    </p>
+                </div>
+                <div class="pluses__item">
+                    <div class="pluses__item-picture">
+                        <span class="icon-hexagon">
+                                    </span>
+                        <span class="icon-check-solid">
+                                        </span>
+                    </div>
+                    <h2 class="pluses__title">retina ready</h2>
+                    <p class="pluses__desc">
+                        Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+                    </p>
+                </div>
+                <div class="pluses__item">
+                    <div class="pluses__item-picture">
+                        <span class="icon-hexagon">
+                                    </span>
+                        <span class="icon-tablet-alt-solid">
+                                        </span>
+                    </div>
+                    <h2 class="pluses__title">responsive</h2>
+                    <p class="pluses__desc">
+                        Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+                    </p>
+                </div>
+                <div class="pluses__item">
+                    <div class="pluses__item-picture">
+                        <span class="icon-hexagon">
+                                        </span>
+                        <span class="icon-gripfire-brands">
+                                            </span>
+                    </div>
+                    <h2 class="pluses__title">clean & useful</h2>
+                    <p class="pluses__desc">
+                        Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus eget mauris fusce sit amet
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="container portfolio__container">
+            <div class="portfolio__info offset">
+                <h2>portfolio</h2>
+                <ul class="portfolio__menu">
+                    <li class="active" data-btn="all">all</li>
+                    <li data-btn="illustration">illustration</li>
+                    <li data-btn="digital">digital art</li>
+                    <li data-btn="web">web design</li>
+                </ul>
+            </div>
+            <div class="portfolio__works">
+                <div class="portfolio__work" data-work="web">
+                    <img src="images/portfolio-1.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+                <div class="portfolio__work" data-work="web">
+                    <img src="images/portfolio-2.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+                <div class="portfolio__work" data-work="digital">
+                    <img src="images/portfolio-3.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+                <div class="portfolio__work" data-work="web">
+                    <img src="images/portfolio-4.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+                <div class="portfolio__work" data-work="digital">
+                    <img src="images/portfolio-5.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+                <div class="portfolio__work" data-work="illustration">
+                    <img src="images/portfolio-6.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+                <div class="portfolio__work" data-work="web">
+                    <img src="images/portfolio-7.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+                <div class="portfolio__work" data-work="illustration">
+                    <img src="images/portfolio-8.jpg" alt="">
+                    <div><span>design name</span></div>
+                </div>
+            </div>
+            <img src="images/redline.png" alt="" class="redline">
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="features__title-wrapper">
+                <h2 class="title about__title">
+                    our <span>product features</span>
+                </h2>
+                <p class="title-desc about__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="features__content">
+                <div class="features__pluses">
+                    <div class="features__plus">
+                        <span class="features__pluses-text">Unlimited Color Options</span>
+                        <div class="features__sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-check-solid"></span>
+                        </div>
+                    </div>
+                    <div class="features__plus">
+                        <span class="features__pluses-text">Outstanding Support</span>
+                        <div class="features__sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-check-solid"></span>
+                        </div>
+                    </div>
+                    <div class="features__plus">
+                        <span class="features__pluses-text">Retina Ready</span>
+                        <div class="features__sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-check-solid"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="features__picture">
+                    <img src="images/features.png" alt="">
+                    <button>free psd</button>
+                </div>
+                <div class="features__pluses">
+                    <div class="features__plus">
+                        <div class="features__sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-check-solid"></span>
+                        </div>
+                        <span class="features__pluses-text">Unlimited Color Options</span>
+                    </div>
+                    <div class="features__plus">
+                        <div class="features__sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-check-solid"></span>
+                        </div>
+                        <span class="features__pluses-text">Outstanding Support</span>
+                    </div>
+                    <div class="features__plus">
+                        <div class="features__sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-check-solid"></span>
+                        </div>
+                        <span class="features__pluses-text">Retina Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <div class="clients__title-wrapper offset">
+                <h2 class="title clients__title">
+                    our <span>clients</span>
+                </h2>
+                <p class="title-desc clients__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="clients__wrapper">
+                <div class="clients__slider">
+                    <h3 class="clients__slider-title">happy clients say</h3>
+                    <div class="clients__slides">
+                        <div class="clients__slide" data-slide="1">
+                            <p class="clients__slider-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                            </p>
+                            <div class="clients__slider-picture">
+                                <img src="images/client-face.png" alt="">
+                                <span>vasya petrov</span>
+                            </div>
+                        </div>
+                        <div class="clients__slide" data-slide="2">
+                            <p class="clients__slider-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+                                Dapibus egestas turpis.
+                            </p>
+                            <div class="clients__slider-picture">
+                                <img src="images/client-face.png" alt="">
+                                <span>dima popov</span>
+                            </div>
+                        </div>
+                        <div class="clients__slide" data-slide="3">
+                            <p class="clients__slider-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                            </p>
+                            <div class="clients__slider-picture">
+                                <img src="images/client-face.png" alt="">
+                                <span>sanya kokoshkin</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__slider-btns">
+                        <span data-slide="1" class="active"></span>
+                        <span data-slide="2"></span>
+                        <span data-slide="3"></span>
+                    </div>
+                </div>
+                <div class="clients__pictures">
+                    <div class="clients__picture">
+                        <img src="images/clients-slide1.jpg" alt="">
+                    </div>
+                    <div class="clients__picture">
+                        <img src="images/clients-slide2.jpg" alt="">
+                    </div>
+                    <div class="clients__picture">
+                        <img src="images/clients-slide3.jpg" alt="">
+                    </div>
+                    <div class="clients__picture">
+                        <img src="images/clients-slide4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="images/redline.png" alt="" class="redline">
+    </section>
+    <section class="teamwork">
+        <div class="container">
+            <div class="teamwork__title-wrapper offset">
+                <h2 class="title teamwork__title">
+                    our <span>teamwork</span>
+                </h2>
+                <p class="title-desc teamwork__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="teamwork__workers">
+                <div class="teamwork__worker">
+                    <div class="teamwork__worker-picture">
+                        <img src="images/teamwork3.jpg" alt="">
+                        <div class="teamwork__worker-soc">
+                            <a href="https://ru-ru.facebook.com/">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-facebook-f-brands"></span>
+                            </a>
+                            <a href="https://twitter.com/?lang=ru">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-twitter-brands"></span>
+                            </a>
+                            <a href="https://google.com">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-google-plus-g-brands"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="teamwork__worker-info">
+                        <h3>bruce wayne</h3>
+                        <p>Webdesigner</p>
+                    </div>
+                </div>
+                <div class="teamwork__worker">
+                    <div class="teamwork__worker-picture">
+                        <img src="images/teamwork1.jpg" alt="">
+                        <div class="teamwork__worker-soc">
+                            <a href="https://ru-ru.facebook.com/">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-facebook-f-brands"></span>
+                            </a>
+                            <a href="https://twitter.com/?lang=ru">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-twitter-brands"></span>
+                            </a>
+                            <a href="https://google.com">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-google-plus-g-brands"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="teamwork__worker-info">
+                        <h3>amr srour</h3>
+                        <p>Webdesigner</p>
+                    </div>
+                </div>
+                <div class="teamwork__worker">
+                    <div class="teamwork__worker-picture">
+                        <img src="images/teamwork2.jpg" alt="">
+                        <div class="teamwork__worker-soc">
+                            <a href="https://ru-ru.facebook.com/">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-facebook-f-brands"></span>
+                            </a>
+                            <a href="https://twitter.com/?lang=ru">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-twitter-brands"></span>
+                            </a>
+                            <a href="https://google.com">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-google-plus-g-brands"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="teamwork__worker-info">
+                        <h3>sarah doe</h3>
+                        <p>Webdesigner</p>
+                    </div>
+                </div>
+                <div class="teamwork__worker">
+                    <div class="teamwork__worker-picture">
+                        <img src="images/teamwork3.jpg" alt="">
+                        <div class="teamwork__worker-soc">
+                            <a href="https://ru-ru.facebook.com/">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-facebook-f-brands"></span>
+                            </a>
+                            <a href="https://twitter.com/?lang=ru">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-twitter-brands"></span>
+                            </a>
+                            <a href="https://google.com">
+                                <span class="icon-hexagon"></span>
+                                <span class="icon-google-plus-g-brands"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="teamwork__worker-info">
+                        <h3>johan de</h3>
+                        <p>Webdesigner</p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/blackline.png" alt="" class="redline blackline">
+        </div>
+    </section>
+    <section class="skills">
+        <div class="container">
+            <div class="skills__title-wrapper offset">
+                <h2 class="title skills__title">
+                    our <span>skills</span>
+                </h2>
+                <p class="title-desc skills__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="skills__wrapper">
+                <div class="skills__skill">
+                    <div class="skills__skill-picture">
+                        <img src="images/ellipse.png" alt="">
+                        <span data-perc="90">
+                        </span>
+                    </div>
+                    <h3>photoshop</h3>
+                    <p>Donec luctus tortor in placerat faucibus</p>
+                </div>
+                <div class="skills__skill">
+                    <div class="skills__skill-picture">
+                        <img src="images/ellipse.png" alt="">
+                        <span data-perc="80">
+                        </span>
+                    </div>
+                    <h3>html</h3>
+                    <p>Donec luctus tortor in placerat faucibus</p>
+                </div>
+                <div class="skills__skill">
+                    <div class="skills__skill-picture">
+                        <img src="images/ellipse.png" alt="">
+                        <span data-perc="70">
+                        </span>
+                    </div>
+                    <h3>php</h3>
+                    <p>Donec luctus tortor in placerat faucibus</p>
+                </div>
+                <div class="skills__skill">
+                    <div class="skills__skill-picture">
+                        <img src="images/ellipse.png" alt="">
+                        <span data-perc="90">
+                        </span>
+                    </div>
+                    <h3>wordpress</h3>
+                    <p>Donec luctus tortor in placerat faucibus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services__title-wrapper offset">
+                <h2 class="title services__title">
+                    our <span>services</span>
+                </h2>
+                <p class="title-desc services__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="services__wrapper">
+                <div class="services__service">
+                    <div class="services__service-title">
+                        <div class="services__service-sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-code-solid"></span>
+                        </div>
+                        <h3>development</h3>
+                    </div>
+                    <p class="services__service-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.
+                    </p>
+                </div>
+                <div class="services__service">
+                    <div class="services__service-title">
+                        <div class="services__service-sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-html5-brands"></span>
+                        </div>
+                        <h3>html/css</h3>
+                    </div>
+                    <p class="services__service-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.
+                    </p>
+                </div>
+                <div class="services__service">
+                    <div class="services__service-title">
+                        <div class="services__service-sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-wordpress-simple-brands"></span>
+                        </div>
+                        <h3>wordpress</h3>
+                    </div>
+                    <p class="services__service-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.
+                    </p>
+                </div>
+                <div class="services__service">
+                    <div class="services__service-title">
+                        <div class="services__service-sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-tablet-alt-solid"></span>
+                        </div>
+                        <h3>applications</h3>
+                    </div>
+                    <p class="services__service-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.
+                    </p>
+                </div>
+                <div class="services__service">
+                    <div class="services__service-title">
+                        <div class="services__service-sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-pencil-alt-solid"></span>
+                        </div>
+                        <h3>ui/ux design</h3>
+                    </div>
+                    <p class="services__service-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.
+                    </p>
+                </div>
+                <div class="services__service">
+                    <div class="services__service-title">
+                        <div class="services__service-sign">
+                            <span class="icon-hexagon"></span>
+                            <span class="icon-laptop-solid"></span>
+                        </div>
+                        <h3>responsive layout</h3>
+                    </div>
+                    <p class="services__service-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna Dapibus egestas in turpis and Praesent faucibus nisl sit amet nulla sollicitudin.
+                    </p>
+                </div>
+            </div>
+            <img src="images/redline.png" alt="" class="redline">
+        </div>
+    </section>
+    <section class="plans">
+        <div class="container">
+            <div class="plans__title-wrapper offset">
+                <h2 class="title plans__title">
+                    plans <span>bestseller</span>
+                </h2>
+                <p class="title-desc plans__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="plans__wrapper">
+                <div class="plans__plan">
+                    <h3>reseller</h3>
+                    <div class="plans__plan-price">
+                        <span>199$</span>
+                        <span>year</span>
+                    </div>
+                    <div class="plans__plan-features">
+                        <span>CPU E3-1230 3.3GHz 8MB-V2</span>
+                        <span>HARD 500GB SATA 7200 RPM</span>
+                        <span>RAM 8GB DDR3 1333MHZ ECC</span>
+                        <span>Traffic 10 TB</span>
+                        <span>Connection 100 MB</span>
+                        <span>5IP</span>
+                    </div>
+                    <div class="plans__price-order">
+                        <button>
+                            order now
+                        </button>
+                    </div>
+                </div>
+                <div class="plans__plan">
+                    <h3>reseller</h3>
+                    <div class="plans__plan-price">
+                        <span>199$</span>
+                        <span>year</span>
+                    </div>
+                    <div class="plans__plan-features">
+                        <span>CPU E3-1230 3.3GHz 8MB-V2</span>
+                        <span>HARD 500GB SATA 7200 RPM</span>
+                        <span>RAM 8GB DDR3 1333MHZ ECC</span>
+                        <span>Traffic 10 TB</span>
+                        <span>Connection 100 MB</span>
+                        <span>5IP</span>
+                    </div>
+                    <div class="plans__price-order">
+                        <button>
+                            order now
+                        </button>
+                    </div>
+                </div>
+                <div class="plans__plan">
+                    <h3>reseller</h3>
+                    <div class="plans__plan-price">
+                        <span>199$</span>
+                        <span>year</span>
+                    </div>
+                    <div class="plans__plan-features">
+                        <span>CPU E3-1230 3.3GHz 8MB-V2</span>
+                        <span>HARD 500GB SATA 7200 RPM</span>
+                        <span>RAM 8GB DDR3 1333MHZ ECC</span>
+                        <span>Traffic 10 TB</span>
+                        <span>Connection 100 MB</span>
+                        <span>5IP</span>
+                    </div>
+                    <div class="plans__price-order">
+                        <button>
+                            order now
+                        </button>
+                    </div>
+                </div>
+                <div class="plans__plan">
+                    <h3>reseller</h3>
+                    <div class="plans__plan-price">
+                        <span>199$</span>
+                        <span>year</span>
+                    </div>
+                    <div class="plans__plan-features">
+                        <span>CPU E3-1230 3.3GHz 8MB-V2</span>
+                        <span>HARD 500GB SATA 7200 RPM</span>
+                        <span>RAM 8GB DDR3 1333MHZ ECC</span>
+                        <span>Traffic 10 TB</span>
+                        <span>Connection 100 MB</span>
+                        <span>5IP</span>
+                    </div>
+                    <div class="plans__price-order">
+                        <button>
+                            order now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="twitter">
+        <div class="container">
+            <span class="icon-twitter-brands"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. </p>
+            <img src="images/redline.png" alt="" class="redline">
+        </div>
+    </section>
+    <section class="blog">
+        <div class="container">
+            <div class="blog__title-wrapper offset">
+                <h2 class="title blog__title">
+                    our <span>blog</span>
+                </h2>
+                <p class="title-desc blog__title-desc">
+                    Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+                </p>
+            </div>
+            <div class="arrow-up">
+                <span class="icon-chevron-right-solid"></span>
+            </div>
+            <div class="blog__wrapper">
+                <div class="blog__wrapper-posts">
+                    <div class="blog__post">
+                        <img src="images/blog-1.jpg" alt="">
+                        <div class="blog__post-content">
+                            <h3>Lorem ipsum dolor sit amet, consectetur </h3>
+                            <div class="blog__post-stats">
+                                <div>
+                                    <span class="icon-user-alt-solid"></span>
+                                    <span>admin</span>
+                                </div>
+                                <div>
+                                    <span class="icon-comment-solid"></span>
+                                    <span>1205</span>
+                                </div>
+                                <div>
+                                    <span class="icon-eye-regular"></span>
+                                    <span>1205</span>
+                                </div>
+                            </div>
+                            <p class="blog__post-text">
+                                Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus ...
+                            </p>
+                            <button>
+                                    view more
+                                </button>
+                        </div>
+                    </div>
+                    <div class="blog__post">
+                        <img src="images/blog-2.jpg" alt="">
+                        <div class="blog__post-content">
+                            <h3>Lorem ipsum dolor sit amet, consectetur </h3>
+                            <div class="blog__post-stats">
+                                <div>
+                                    <span class="icon-user-alt-solid"></span>
+                                    <span>admin</span>
+                                </div>
+                                <div>
+                                    <span class="icon-comment-solid"></span>
+                                    <span>1205</span>
+                                </div>
+                                <div>
+                                    <span class="icon-eye-regular"></span>
+                                    <span>1205</span>
+                                </div>
+                            </div>
+                            <p class="blog__post-text">
+                                Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus ...
+                            </p>
+                            <button>
+                            view more
+                        </button>
+                        </div>
+                    </div>
+                    <div class="blog__post">
+                        <img src="images/blog-2.jpg" alt="">
+                        <div class="blog__post-content">
+                            <h3>Lorem ipsum dolor sit amet, consectetur </h3>
+                            <div class="blog__post-stats">
+                                <div>
+                                    <span class="icon-user-alt-solid"></span>
+                                    <span>admin</span>
+                                </div>
+                                <div>
+                                    <span class="icon-comment-solid"></span>
+                                    <span>1205</span>
+                                </div>
+                                <div>
+                                    <span class="icon-eye-regular"></span>
+                                    <span>1205</span>
+                                </div>
+                            </div>
+                            <p class="blog__post-text">
+                                Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi. Phasellus at ante magna. Quisque nec porta nulla. Suspendisse nec orci vel elit aliquet blandit in non orci. Vivamus posuere dui eget lacinia rutrum. Cum sociis natoque penatibus ...
+                            </p>
+                            <button>
+                            view more
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-down">
+                <span class="icon-chevron-right-solid"></span>
+            </div>
+        </div>
+    </section>
+    <section class="find-us">
+        <div class="find-us__title-wrapper offset">
+            <h2 class="title find-us__title">
+                find us <span>here</span>
+            </h2>
+            <p class="title-desc find-us__title-desc">
+                Lorem ipsum dolor sit amet, consectetur <span>adipiscing elit.</span> Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis.
+            </p>
+        </div>
+        <div class="find-us__map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A97acbc2514e0097089df196e5f1d561f72306e522e77cffd448eb8a59ec847e6&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+            <form action="#" class="find-us__form">
+                <h3>send message</h3>
+                <div class="find-us__inputs">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" placeholder="Your text"></textarea>
+                </div>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <img src="images/footer-logo.png" alt="">
+    </footer>
+    <!-- Скрипты -->
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
