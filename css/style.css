@@ -205,6 +205,8 @@ html {
 
 html, body {
   font-family: Raleway;
+  position: relative;
+  top: 0;
 }
 
 body.active {
@@ -375,6 +377,26 @@ a {
 
 .header__menu li:first-child {
   margin-left: 0rem;
+}
+
+.header__menu li.active {
+  color: #fff;
+}
+
+.header__menu li.active:before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 3px;
+  background-color: #ff0036;
+}
+
+.header__menu li.active:after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 3px;
+  background-color: #ff0036;
 }
 
 @media screen and (max-width: 1060px) {

@@ -13,6 +13,8 @@ html
         font-size: 8px
 html, body 
     font-family: Raleway
+    position: relative
+    top: 0
 body.active
     overflow-y: hidden
 button 
@@ -99,6 +101,20 @@ a
                 transition: 0.2s all
             &:first-child
                 margin-left: 0rem
+            &.active
+                color: #fff
+                &:before
+                    content: ""
+                    display: block
+                    width: 27px
+                    height: 3px
+                    background-color: #ff0036
+                &:after
+                    content: ""
+                    display: block
+                    width: 27px
+                    height: 3px
+                    background-color: #ff0036
         @media screen and ( max-width: 1060px )
             font-size: 1.65rem
         @media screen and ( max-width: 992px )

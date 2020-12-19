@@ -128,3 +128,80 @@ function clearPosts() {
         post.classList.remove("prev");
     })
 }
+
+/* Эффект у элементом меню при скролле */
+const header_menu = document.querySelectorAll(".header__menu li");
+let last_scroll = 0;
+let blocks = document.querySelectorAll("section");
+
+if (document.body.clientWidth > 768) {
+    header_menu[0].classList.add("active");
+    window.addEventListener("scroll", (e) => {
+        let top = window.pageYOffset;
+
+        header_menu.forEach(li => {
+            if (li.classList.contains("active")) {
+                let li_next_active = li.nextElementSibling || header_menu[header_menu.length - 1];
+                let li_prev_active = li.previousElementSibling || header_menu[0];
+
+                if (last_scroll < top) {
+                    blocks.forEach(block => {
+                        if (block.dataset.li == li_next_active.dataset.li) {
+                            let block_top = block.getBoundingClientRect().top;
+
+                            if (block_top - window.innerHeight < -800) {
+                                reset_li();
+                                li_next_active.classList.add("active");
+                            }
+                            return;
+                        }
+                    })
+                } else {
+                    blocks.forEach((block) => {
+                        if (block.dataset.li == li_prev_active.dataset.li) {
+                            let block_top = block.getBoundingClientRect().bottom;
+
+                            if (block_top > 400) {
+                                reset_li();
+                                li_prev_active.classList.add("active");
+                            }
+                            return;
+                        }
+                    })
+                }
+                return;
+            }
+        })
+        last_scroll = top;
+    })
+}
+
+
+header_menu.forEach(li => {
+    li.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        blocks.forEach(block => {
+            if (li.dataset.li == block.dataset.li) {
+                const block_top = block.getBoundingClientRect().top;
+
+                menu.classList.remove("header__menu_active");
+                burger.classList.remove("active");
+                document.body.classList.remove("active");
+
+                window.scrollBy({
+                    top: block_top,
+                    behavior: 'smooth'
+                });
+                reset_li();
+                if (document.body.clientWidth > 768) li.classList.add("active");
+            }
+        })
+    })
+})
+
+function reset_li() {
+    header_menu.forEach(li => {
+        li.classList.remove("active");
+    })
+}
